@@ -33,9 +33,11 @@ FormFlex is a powerful and intuitive frontend system for building dynamic, multi
     * A "Clear Form" button allows users to reset the entire form builder to an empty state with a confirmation.
 * **Form Submission Handling:**
     * The form filler handles submission, logging data (including file metadata) to the console (simulating API interaction).
+* **Live Deployment on Vercel:**
+    * Hosted at https://form-flex-three.vercel.app/
 
 ## Technologies Used
-* **Frontend Framework:**REact
+* **Frontend Framework:**React
 * **Web Framework:**Remix
 * **Language:**Typescript
 * **Styling:**Tailwind CSS
