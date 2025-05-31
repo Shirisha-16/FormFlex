@@ -1,3 +1,6 @@
+/* app/tailwind.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,4 +12,42 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for better aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme('colors.gray.200');
+  border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: theme('colors.gray.700');
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme('colors.teal.400');
+  border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: theme('colors.teal.600');
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.teal.500');
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.teal.500');
 }
